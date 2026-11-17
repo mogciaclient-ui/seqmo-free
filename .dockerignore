@@ -1,0 +1,5 @@
+.env*
+.git
+.next
+.data
+node_modules

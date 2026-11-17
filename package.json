@@ -1,0 +1,33 @@
+{
+  "name": "seqmo-phase1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "staff": "node --env-file-if-exists=.env.local scripts/staff.mjs",
+    "worker:job": "node --env-file-if-exists=.env.local worker.mjs --job",
+    "worker": "node --env-file-if-exists=.env.local worker.mjs",
+    "build": "next build --webpack",
+    "start": "next start",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "firebase-admin": "14.4.0",
+    "google-auth-library": "10.9.1",
+    "ipaddr.js": "2.5.0",
+    "next": "16.4.6",
+    "parse5": "7.3.0",
+    "playwright": "1.64.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tldts": "7.0.19"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "typescript": "5.9.3"
+  }
+}
